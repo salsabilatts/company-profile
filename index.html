@@ -1,238 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PT. Sumberdaya International — Memberdayakan Indonesia</title>
-  <meta name="description" content="PT. Sumberdaya International — Memberdayakan Indonesia Melalui Teknologi Inklusif" />
-  <!-- Bootstrap CSS (CDN) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    /* Simple custom styles */
-    :root { --brand:#0d6efd; --muted:#6c757d; }
-    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-    .hero { background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02)); padding: 6rem 0; }
-    .feature-icon { width:56px; height:56px; display:flex; align-items:center; justify-content:center; border-radius:12px; background:#f8f9fa; }
-    .timeline-item { border-left:3px solid #e9ecef; padding-left:1rem; margin-bottom:1.3rem; }
-    .clients img { max-height:48px; opacity:.85; filter:grayscale(0.1); }
-    footer { background:#0f1724; color:#cbd5e1; padding:2.5rem 0; }
-    .cta { background: linear-gradient(90deg,var(--brand),#6610f2); color:white; border-radius:10px; padding:1rem 1.25rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Teknologi Sumberdaya International | Memberdayakan Indonesia Melalui Teknologi Inklusif</title>
+    <meta name="description" content="PT. Sumberdaya International - Solusi IT terjangkau untuk UKM, Korporasi, dan Pemerintah sejak 2000">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Sumberdaya Intl.</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#timeline">Sejarah</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-        <li class="nav-item ms-2"><a class="btn btn-outline-primary" href="#contact">Hubungi</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <h1 class="display-5 fw-bold">Memberdayakan Indonesia Melalui <span class="text-primary">Teknologi Inklusif</span></h1>
-        <p class="lead text-muted">Solusi IT untuk UKM, korporasi, dan layanan publik — mulai dari website, POS cloud, hingga transformation roadmap & keamanan siber.</p>
-        <div class="d-flex gap-2">
-          <a href="#services" class="btn btn-primary btn-lg">Lihat Layanan</a>
-          <a href="#contact" class="btn btn-outline-secondary btn-lg">Hubungi Kami</a>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                  <img src="asset/logo.png" alt="Logo PT Sumberdaya International" class="logo-img">
+                    <span>ITRumahRakyat</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-        <div class="mt-4 small text-muted">Berdiri sejak 2000 · One-stop IT for Business · Fokus pada inklusivitas</div>
-      </div>
-      <div class="col-lg-5 text-center">
-        <!-- Placeholder illustration -->
-        <img src="https://via.placeholder.com/420x300.png?text=Ilustrasi+Teknologi" class="img-fluid rounded shadow-sm" alt="Ilustrasi Teknologi">
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-<!-- ABOUT -->
-<section id="about" class="py-5">
-  <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-lg-6">
-        <h3>Tentang PT. Sumberdaya International</h3>
-        <p class="text-muted">Perusahaan teknologi dengan pengalaman 25+ tahun, menyediakan solusi terjangkau untuk digitalisasi UKM, implementasi e-government, serta layanan managed security & cloud.</p>
-        <ul class="list-unstyled">
-          <li><strong>Visi:</strong> Menjadi pilar transformasi digital Indonesia.</li>
-          <li><strong>Misi:</strong> Solusi terjangkau, memberdayakan UKM, mendorong inovasi publik.</li>
-        </ul>
-      </div>
-      <div class="col-lg-6">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="p-3 border rounded">
-              <h5 class="mb-1">25+ Tahun</h5>
-              <p class="small text-muted mb-0">Pengalaman di berbagai sektor</p>
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Memberdayakan Indonesia Melalui Teknologi Inklusif</h1>
+                    <p class="tagline">Solusi IT Terjangkau untuk UKM, Korporasi, dan Pemerintah sejak 2000</p>
+                    <div class="cta-buttons">
+                        <a href="#kontak" class="btn btn-primary">Konsultasi Gratis</a>
+                        <a href="#layanan" class="btn btn-secondary">Lihat Layanan</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-illustration">
+                        🚀
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded">
-              <h5 class="mb-1">One-Stop</h5>
-              <p class="small text-muted mb-0">Dari cloud ke aplikasi</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Proyek Selesai</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">Tim Profesional</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-label">Kepuasan Klien (%)</span>
+                </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded">
-              <h5 class="mb-1">Inklusif</h5>
-              <p class="small text-muted mb-0">Solusi untuk semua</p>
+        </div>
+    </section>
+
+    <section class="services" id="layanan">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <p class="section-subtitle">Empat Pilar Solusi IT untuk Kesuksesan Digital Anda</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Custom Development</h3>
+                    <p>Pengembangan aplikasi web & mobile yang disesuaikan dengan kebutuhan bisnis Anda. Solusi kustom untuk masalah unik Anda.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <p>Migrasi cloud, managed services, keamanan siber, dan disaster recovery. Fondasi digital yang kuat dan aman.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Platform Rumah Rakyat</h3>
+                    <p>Solusi SaaS terjangkau untuk UKM: POS, HRIS, Website Instan, dan Akuntansi. Akses di itrumahrakyat.com</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Digital Transformation</h3>
+                    <p>Konsultasi strategi IT, implementasi e-Government, data analytics, dan audit sistem untuk transformasi digital Anda.</p>
+                </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded">
-              <h5 class="mb-1">Keamanan</h5>
-              <p class="small text-muted mb-0">Prioritas tiap solusi</p>
+        </div>
+    </section>
+
+    <section class="why-us" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            <p class="section-subtitle">Dipercaya oleh ratusan perusahaan sejak tahun 2000</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⏰</div>
+                    <h4>25 Tahun Pengalaman</h4>
+                    <p>Teruji dari era dot-com hingga era AI</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <h4>Fokus "Rakyat"</h4>
+                    <p>Solusi inklusif untuk semua skala bisnis</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h4>One-Stop Solution</h4>
+                    <p>Semua kebutuhan IT dalam satu atap</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Tim Profesional</h4>
+                    <p>150+ developer dan konsultan bersertifikat</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- SERVICES -->
-<section id="services" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h4 class="fw-bold">Layanan & Solusi</h4>
-      <p class="text-muted">Empat pilar layanan kami untuk mendukung transformasi digital Anda.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <div class="feature-icon mb-3"><svg width="24" height="24" fill="currentColor"><rect width="24" height="24" rx="4"/></svg></div>
-          <h6>Custom Software</h6>
-          <p class="small text-muted mb-0">Web, Mobile, API, UI/UX.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <div class="feature-icon mb-3">⚙️</div>
-          <h6>Infrastruktur & Cloud</h6>
-          <p class="small text-muted mb-0">Managed cloud, security, DR.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <div class="feature-icon mb-3">🏠</div>
-          <h6>Platform SaaS</h6>
-          <p class="small text-muted mb-0">POS, HRIS, Akuntansi UKM.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <div class="feature-icon mb-3">🧭</div>
-          <h6>Konsultasi Digital</h6>
-          <p class="small text-muted mb-0">Strategi TI, e-Gov, BI.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="contact" id="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">Mari wujudkan transformasi digital Anda bersama kami</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <strong>Alamat</strong><br>
+                            Menara Digital, Jl. Jend. Sudirman Kav. 20<br>
+                            Jakarta Selatan, 12190, Indonesia
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            info@itrumahrakyat.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📱</div>
+                        <div>
+                            <strong>Telepon</strong><br>
+                            +62 121 555 6789
+                        </div>
+                    </div>
 
-<!-- TIMELINE -->
-<section id="timeline" class="py-5">
-  <div class="container">
-    <h4 class="fw-bold text-center mb-4">Sejarah & Perjalanan</h4>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="timeline-item">
-          <h6 class="mb-1">2000 - 2005</h6>
-          <p class="text-muted small mb-0">Fondasi: layanan web, jaringan, hardware untuk bisnis kecil.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/itrumahrakyat" class="social-link" target="_blank">in</a>
+                        <a href="https://www.instagram.com/itrumahrakyat/" class="social-link" target="_blank">📷</a>
+                        <a href="https://www.tiktok.com/@itrumahrakyat" class="social-link" target="_blank">tiktok</a>
+                        <a href="https://www.facebook.com/profile.php?id=61582771150201" class="social-link" target="_blank">f</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="nama@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" required placeholder="Ceritakan kebutuhan IT Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="timeline-item">
-          <h6 class="mb-1">2006 - 2011</h6>
-          <p class="text-muted small mb-0">Pengembangan perangkat lunak kustom & digitalisasi proses bisnis.</p>
-        </div>
-        <div class="timeline-item">
-          <h6 class="mb-1">2012 - 2017</h6>
-          <p class="text-muted small mb-0">Adopsi cloud, mobile apps, managed infrastructure.</p>
-        </div>
-        <div class="timeline-item">
-          <h6 class="mb-1">2018 - 2022</h6>
-          <p class="text-muted small mb-0">e-Gov, portal data, dan itrumahrakyat.com sebagai inisiatif SaaS.</p>
-        </div>
-        <div class="timeline-item">
-          <h6 class="mb-1">2023 - Sekarang</h6>
-          <p class="text-muted small mb-0">Fokus AI praktis & keamanan siber.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- CLIENTS -->
-<section class="py-4 bg-light">
-  <div class="container text-center">
-    <h6 class="mb-3">Dipercaya oleh</h6>
-    <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap clients">
-      <img src="https://via.placeholder.com/120x48?text=Client+1" alt="client">
-      <img src="https://via.placeholder.com/120x48?text=Client+2" alt="client">
-      <img src="https://via.placeholder.com/120x48?text=Client+3" alt="client">
-      <img src="https://via.placeholder.com/120x48?text=Client+4" alt="client">
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT / CTA -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <h4 class="fw-bold">Siap memulai transformasi digital?</h4>
-        <p class="text-muted">Hubungi kami untuk konsultasi gratis dan proposal solusi yang sesuai kebutuhan Anda.</p>
-        <div class="d-flex gap-2">
-          <a href="mailto:info@itrumahrakyat.com" class="cta">Email Sekarang</a>
-          <a href="tel:+6221555XXXX" class="btn btn-outline-secondary">Telepon</a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PT. Sumberdaya International. All Rights Reserved.</p>
+            <p>Memberdayakan Indonesia Melalui Teknologi Inklusif</p>
         </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="p-4 border rounded">
-          <strong>Kontak</strong>
-          <p class="mb-1 small text-muted">Email: info@itrumahrakyat.com</p>
-          <p class="mb-1 small text-muted">Telp: +62 21 555 XXXX</p>
-          <p class="mb-0 small text-muted">Alamat: Menara Digital, Jl. Jend. Sudirman, Jakarta</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="mt-5">
-  <div class="container d-md-flex justify-content-between align-items-center">
-    <div>
-      <h6 class="text-white mb-1">PT. Sumberdaya International</h6>
-      <small>© <span id="y"></span> All rights reserved.</small>
-    </div>
-    <div class="mt-3 mt-md-0">
-      <a class="text-decoration-none me-3 text-muted" href="#">LinkedIn</a>
-      <a class="text-decoration-none me-3 text-muted" href="#">Instagram</a>
-      <a class="text-decoration-none text-muted" href="#">Facebook</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // small script
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
