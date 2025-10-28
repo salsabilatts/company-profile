@@ -74,9 +74,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    alert('Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda.');
-    e.target.reset();
+
+    const formData = new FormData(e.target);
+    const response = await fetch('send_mail.php', {
+        method: 'POST',
+        body: formData
+    });
+
+    const result = await response.text();
+    if (result === "success") {
+        alert("Pesan berhasil dikirim! Kami akan segera menghubungi Anda.");
+        e.target.reset();
+    } else {
+        alert("Terjadi kesalahan. Silakan coba lagi nanti.");
+    }
 });
+
+// // Contact form handling
+// document.getElementById('contactForm').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     alert('Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda.');
+//     e.target.reset();
+// });
